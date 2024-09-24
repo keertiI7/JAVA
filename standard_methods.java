@@ -8,6 +8,8 @@ public class standard_methods {
 		System.out.println("After changing to uppercase:"+s.toUpperCase());
 		System.out.println("After changing to lowercase:"+s.toLowerCase());
 		System.out.println("The square is :"+ Math.pow(n,2));
+		System.out.println("The square root is :"+ Math.sqrt(n));
+		
 	}
 
 }
