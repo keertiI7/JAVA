@@ -1,22 +1,22 @@
-package PROGRAMS;
-
+package labinternal;
+import java.util.Scanner;
 public class palindrome {
 	public static void main(String[]args) {
-		int x=121;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter a number:");
+		int n=sc.nextInt();
+		int temp=n;
 		int sum=0;
-		int temp=x;
-		int r=0;
-		while(x>0) {
-		r=x%10;
-		sum=sum*10+r;
-		x=x/10;
+		while(n>0) {
+			int r= n%10;
+			sum=sum*10+r;
+			n=n/10;
 		}
-		if(temp==sum) {
-			System.out.println("Given number is a palindrome");
-		
+		if(sum==temp) {
+			System.out.println("The given number is palindrome");
 		}
 		else {
-			System.out.println("Given number is not a palindrome");
+			System.out.println("The given number is not palindrome");
 		}
 	}
 
